@@ -1,0 +1,399 @@
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333333;
+  font-size: 16px;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+}
+.header-wrapper{
+    background-color: transparent;
+    transition: background-color 0.5s;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+    height: 5rem;
+    z-index: 10;
+}
+.header{
+    position: relative;
+    margin: 0 3.5rem;
+    height: 100%;
+}
+.logo-image{
+    width: 180px;
+    height: auto;
+}
+.signInBtn{
+    background-color: red;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    float: right;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-wrapper{
+    margin: 0 auto;
+    display: block;
+    color: #333333;
+    font-size: 16px;
+    direction: 1tr;
+    webkit-font-smoothing: antialiased;
+}
+.hero{
+    padding: 70px 45px;
+    position: relative;
+    border-bottom: 8px solid #222;
+    margin-bottom: 0;
+    background: transparent;
+    color: white;
+    display: block;
+}
+.hero-background{
+    top: -100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    color: white;
+}
+.hero-background-wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+}
+.hero-background-wrapper .img-gradient{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    border: 0;
+}
+.hero-text{
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    line-height: 1.1;
+    max-width: 950px;
+}
+h1{
+    max-width: 640px;
+    margin: 0 auto;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 155px;
+    margin-inline-end: 155pxx;
+    font-weight: bold;
+}
+.hero-title{
+    font-size: 3.125rem;
+    line-height: 1.1;;
+
+}
+h2{
+    max-width: 640px;
+    display: block;
+    height: 33px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.hero-subtitle{
+    font-weight: normal;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-bottom: 16px;
+    margin-inline-end: 155px;
+    margin-inline-start: 155px;
+}
+@media(max-width: 1449px ) and (min-width: 950px ){
+    h1{
+        font-size: 3.125rem;
+    }
+    h2{
+        font-size: 1,625rem;
+    }
+}
+form{
+    margin-top: 0em;
+}
+.email-form{
+    display: flex;
+}
+@media(max-width: 1449px ) and (min-width: 950px ){
+    .email-form{
+        max-width: 950px;
+        padding-top: 0.85rem;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        flex-flow: column-reverse;      
+    }
+    .email-form-title{
+        max-width: none;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .email-form-lockup{
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        margin: 0 89.125px;
+    }
+    .simpleForm-structure{
+        vertical-align: top;
+        -webkit-box-flex: 1;
+        text-align: right;
+    }
+    .email-field-container{
+        margin: 0;
+        display: inline-block;
+    }
+    input{
+        min-width: 450px;
+        height: 60px;
+    }
+    .placeLabel{
+        font-size: 16px;
+    }
+}
+
+.email-form-title{
+    margin: 0 auto;
+    font-weight: normal;
+    max-width: none;
+}
+h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.email-form-lockup{
+    text-align: center;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+li{
+    list-style: none;
+    margin-left: 0pt;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.email-field{
+    margin-bottom: 10px;
+}
+
+.email-field-container{
+    display: inline-block;
+    max-width: 500px;
+    position: relative;
+}
+.inputBox{
+    position: relative;
+    display: block;
+}
+label{
+    cursor: default;
+}
+.email-address{
+    padding-left: 10px;
+}
+input{
+    line-height: normal;
+    -webkit-writing-mode: horizontal;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+.email-address{
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    color: black;
+}
+.placeLabel{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #8c8c8c;
+    transform: translateY(-50%);
+}
+.try-30-day-structure{
+    float: none;
+}
+@media(max-width: 1449px ) and (min-width: 950px ){
+    .try-30-day-structure{
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        -webkit-box-flex: 1;
+        flex: 1 0 auto;
+    }
+    .try30-btn{
+
+        font-weight: normal;
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        display: inline-block;
+        width: auto;
+        padding: 0.25rem 1rem;
+        line-height: initial;
+        height: 60px;
+    }
+}
+.try30-btn{
+    font-weight: normal;
+    font-size: 1.625rem;
+    min-height: 60px;
+    border: 1px solid #e50914;
+    position: relative;
+    color: #ffffff;
+    background-color: #e50914;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+button{
+    align-items: flex-start;
+    font-stretch: 100%;
+}
+@media(max-width: 1449px ) and (min-width: 950px ){
+    .watchOnTv{
+        padding: 70px 45px;
+}
+.watchOnTv{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: transparent;
+    color: white;
+    align-items: center;
+}
+.watchOnTv-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.watchOnTv-text{
+    margin: -5% 0;
+    width: 52%;
+    height: 100%;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+    font-size: 1.625rem;
+    font-weight: normal;
+}
+.watchOnTv-text1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    text-align: left;
+}
+.watchOnTv-text2{
+    font-size: 1.625rem;
+    font-weight: normal;
+    text-align: left;
+}
+.watchOnTv-img{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.watchOnTv-img-conteiner{
+    margin: -10% -5% -5% 0;
+    position: relative;
+    overflow: hidden;
+}
+.img{
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+.watchOnTv-img-animation{
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 48%;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+}
+.watchOnTv-video{
+    width: 100%;
+    height: 100%;
+}
+video{
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+}
+body{
+    background-color: #000000;
+}
